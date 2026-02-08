@@ -1,0 +1,124 @@
+:root {
+  --primary: #1a5f4a;
+  --primary-light: #2d8f72;
+  --primary-dark: #0f3d32;
+  --accent: #e8b86d;
+  --accent-hover: #d4a55c;
+  --bg-dark: #0d1f1a;
+  --bg-section: #f8faf9;
+  --text: #1a1a1a;
+  --text-muted: #5a6b64;
+  --white: #ffffff;
+  --shadow: 0 10px rgba(23, 95, 74, 0.12);
+  --shadow-hover: 0 20px 50px rgba(26, 95, 74, 0.18);
+  --radius: 12px;
+  --radios-lg: 20px;
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "plus jakarta sans", sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.06);
+  transition:
+    background var(--transition),
+    box-shadow var(--transition);
+}
+.navbar:hover {
+  box-shadow: 0 4px 30px rgba(26, 95, 74, 0.1);
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  gap: 1rem;
+  position: relative;
+  box-sizing: border-box;
+}
+.navbar-logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+.navbar-logo:hover {
+  color: var(--primary);
+  transform: scale(1.02);
+}
+
+.navbar-menu {
+  display: flex;
+
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-list li {
+  margin: 0;
+  padding: 0;
+}
+.nav-list a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  position: relative;
+  transition:
+    color var(--transition),
+    background var(--transition);
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.75rem;
+  right: 0.75rem;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform var(--transition);
+}
+.nav-list a:hover {
+  color: var(--primary);
+  background: rgba(26, 95, 74, 0.06);
+}
+.nav-list a:hover::after {
+  transform: scaleX(1);
+}
