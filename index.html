@@ -15,20 +15,23 @@
   <body>
     <header class="navbar">
       <div class="navbar-inner">
-        <a href="" class="navbar-logo">ProConsult</a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle"  hidden>
-        <label  class="nav-toggle-lable" for="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="#hero" class="navbar-logo">ProConsult</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+        <label
+          for="nav-toggle"
+          class="nav-toggle-label"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
-
         <nav class="navbar-menu">
           <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">How It Works</a></li>
+            <li><a href="#offer">Services</a></li>
+            <li><a href="#how">How It Works</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -37,5 +40,166 @@
         </nav>
       </div>
     </header>
+    <!-- hero section ----------------------->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title animate-in">
+          Professional Consulting & Training That Moves You Forward
+        </h1>
+        <p class="hero-subtitle animate-in delay-1">
+          We bring the expertise and support you need to achieve your
+          professional and personal goals.
+        </p>
+        <div class="hero-buttons animate-in delay-2">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#offer" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+    <!--  about-section -->
+    <section class="section about-section">
+      <div class="container about-grid">
+        <div class="about-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+            alt=""
+          />
+        </div>
+        <div class="about-content">
+          <h2 class="section-title text-left">About Us</h2>
+          <p class="about-lead">
+            ProConsult is a leading consulting firm that provides expert
+            guidance and training to help businesses and individuals achieve
+            their professional goals. With a team of experienced consultants, we
+            offer tailored solutions that drive growth and success.
+          </p>
+          <p>
+            Since 2026 we have supported hundreds of clients across strategy,
+            leadership, and skills development. Our approach combines proven
+            frameworks with hands-on practice so you see real results.
+          </p>
+          <ul class="about-list">
+            <li>Expert guidance in strategy and leadership</li>
+            <li>Customized training programs for individuals and teams</li>
+            <li>Proven frameworks that deliver measurable results</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <!-- what we offer section -->
+    <section id="offer" class="section offer-section">
+      <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <p class="section-desc">
+          Our consulting services are designed to help you navigate .
+        </p>
+        <div class="offer-grid">
+          <artical class="offer-card">
+            <div class="offer-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
+                alt=""
+              />
+            </div>
+            <h3>managment consulting</h3>
+            <p>expert support in strategy and leadership</p>
+            <a href="#contaact" class="offer-link"> Learn More </a>
+          </artical>
+          <artical class="offer-card">
+            <div class="offer-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                alt=""
+              />
+            </div>
+            <h3>managment consulting</h3>
+            <p>expert support in strategy and leadership</p>
+            <a href="#contaact" class="offer-link"> Learn More </a>
+          </artical>
+          <artical class="offer-card">
+            <div class="offer-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80"
+                alt=""
+              />
+            </div>
+            <h3>managment consulting</h3>
+            <p>expert support in strategy and leadership</p>
+            <a href="#contaact" class="offer-link"> Learn More </a>
+          </artical>
+        </div>
+      </div>
+    </section>
+    <!-- how its works -->
+    <section id="how" class="section how-section">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-desc">
+          Our process is designed to deliver results through a combination of
+          expert guidance and hands-on practice.
+        </p>
+
+        <div class="how-grid">
+          <div class="how-step">
+            <div class="how-icon-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=80"
+                alt=""
+              />
+            </div>
+            <span class="how-num">1</span>
+            <h3>Assessment</h3>
+            <p>
+              We begin by assessing your current situation and identifying key
+              challenges and opportunities.
+            </p>
+          </div>
+          <div class="how-step">
+            <div class="how-icon-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&q=80"
+                alt=""
+              />
+            </div>
+            <span class="how-num">2</span>
+            <h3>Planning</h3>
+            <p>
+              We develop a detailed plan tailored to your specific needs and
+              goals.
+            </p>
+          </div>
+          <div class="how-step">
+            <div class="how-icon-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=80"
+                alt=""
+              />
+            </div>
+            <span class="how-num">3</span>
+            <h3>Implementation</h3>
+            <p>We implement the plan with expert guidance and support.</p>
+          </div>
+          <div class="how-step">
+            <div class="how-icon-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80"
+                alt=""
+              />
+            </div>
+            <span class="how-num">4</span>
+            <h3>Assessment</h3>
+            <p>
+              We assess the results of the implementation and make adjustments
+              as needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
